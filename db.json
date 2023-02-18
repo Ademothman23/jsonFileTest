@@ -1,6 +1,7 @@
 {
     "spotify": 
       {
-        "blur": true
+        "blur": true;
+        "round": true;
       }
   }

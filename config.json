@@ -136,7 +136,7 @@
           "useColorInProgressBar": true,
           "useColorInTitle": true,
           "useColorInUserData": true,
-          "showBlurBackground": false,
+          "showBlurBackground": true,
           "blurCorrectionInFrameSide": true,
           "blurCorrectionInAllSides": true,
           "alwaysUseDefaultDeviceIcon": true

@@ -1,0 +1,147 @@
+{
+  "address": "localhost",
+  "port": 8080,
+  "basePath": "/",
+  "ipWhitelist": [
+    "127.0.0.1",
+    "::ffff:127.0.0.1",
+    "::1"
+  ],
+  "useHttps": false,
+  "httpsPrivateKey": "",
+  "httpsCertificate": "",
+  "language": "en",
+  "locale": "TN",
+  "logLevel": [
+    "INFO",
+    "LOG",
+    "WARN",
+    "ERROR"
+  ],
+  "timeFormat": 24,
+  "units": "metric",
+  "modules": [
+    {
+      "module": "alert"
+    },
+    {
+      "module": "updatenotification",
+      "position": "top_bar"
+    },
+    {
+      "module": "clock",
+      "position": "top_left"
+    },
+    {
+      "module": "calendar",
+      "header": "My Calendar",
+      "position": "top_left",
+      "config": {
+        "calendars": [
+          {
+            "symbol": "calendar-check",
+            "url": "https://calendar.google.com/calendar/ical/contact.adem.ot%40gmail.com/private-c951cb93edfdc5d7096177b81b9e0549/basic.ics"
+          },
+          {
+            "symbol": "cake-candles fa-fade",
+            "url": "https://calendar.google.com/calendar/ical/ademot01%40gmail.com/private-a17275da2313ca5ee2b552ce52585228/basic.ics"
+          }
+        ]
+      }
+    },
+    {
+      "module": "compliments",
+      "position": "lower_third"
+    },
+    {
+      "module": "weather",
+      "position": "top_right",
+      "config": {
+        "weatherProvider": "openweathermap",
+        "type": "current",
+        "location": "Enfidha",
+        "locationID": "2473358",
+        "apiKey": "303ae10ea5f51a080a1d26700990f2a4"
+      }
+    },
+    {
+      "module": "weather",
+      "position": "top_right",
+      "header": "Weather Forecast",
+      "config": {
+        "weatherProvider": "openweathermap",
+        "type": "forecast",
+        "location": "Enfidha",
+        "locationID": "2473358",
+        "apiKey": "303ae10ea5f51a080a1d26700990f2a4"
+      }
+    },
+    {
+      "module": "newsfeed",
+      "position": "bottom_left",
+      "config": {
+        "feeds": [
+          {
+            "title": "BBC News",
+            "url": "https://feeds.bbci.co.uk/arabic/rss.xml"
+          },
+          {
+            "title": "Gaming News",
+            "url": "https://www.gameinformer.com/news.xml"
+          },
+          {
+            "title": "New York Times",
+            "url": "https://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+          }
+        ],
+        "showSourceTitle": true,
+        "showPublishDate": true,
+        "broadcastNewsFeeds": true,
+        "broadcastNewsUpdates": true
+      }
+    },
+    {
+      "module": "MMM-OnSpotify",
+      "position": "bottom_right",
+      "config": {
+        "clientID": "5558dc3169fd40e6a349a195bfb1fa72",
+        "clientSecret": "b74e40e72bc5433a97cdc9e6c534e261",
+        "accessToken": "BQBES9CBSzBTx-yiVV4F4rKhm1t3-0wEf40tltnZLG5F0nnJZ38DaVlI-FtA8x6_aGm-DSCum5qHP2cLlJYlJX7ci8ROaHjbbe2H2dszzw4Xht8llESOhoAwdI_6dvvHaronQfRurJyDW34Ja_elQdyQQgqzuTtePCR6m2gRhYRfBrupdM8lk30OeIylVQh_v5y91hFhj0mzXBM",
+        "refreshToken": "AQDN9E9xDLI_wI-P_vyMBe70AJ_2wtqQgEwG6AZyxfTpCfvcKAycsX6SJRwPIMPDaZWnmFgXMvjosFq9W4zepusiMsKMQ94i_mTHoXecutvqsLTiOCwQYm_mSImDDHEdKPE",
+        "advertisePlayerTheme": true,
+        "displayWhenEmpty": "none",
+        "userAffinityUseTracks": false,
+        "prefersLargeImageSize": false,
+        "hideTrackLenghtAndAnimateProgress": false,
+        "showDebugPalette": true,
+        "userDataMaxAge": 14400,
+        "userAffinityMaxAge": 36000,
+        "updateInterval": {
+          "isPlaying": 1,
+          "isEmpty": 2,
+          "isPlayingHidden": 2,
+          "isEmptyHidden": 4,
+          "onReconnecting": 4,
+          "onError": 8
+        },
+        "theming": {
+          "mediaAnimations": false,
+          "fadeAnimations": false,
+          "transitionAnimations": true,
+          "spotifyCodeExperimentalShow": false,
+          "spotifyCodeExperimentalUseColor": true,
+          "spotifyCodeExperimentalSeparateItem": true,
+          "roundMediaCorners": true,
+          "roundProgressBar": true,
+          "useColorInProgressBar": true,
+          "useColorInTitle": true,
+          "useColorInUserData": true,
+          "showBlurBackground": true,
+          "blurCorrectionInFrameSide": true,
+          "blurCorrectionInAllSides": true,
+          "alwaysUseDefaultDeviceIcon": true
+        }
+      }
+    }
+  ]
+}

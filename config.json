@@ -34,7 +34,7 @@
     },
     {
       "module": "calendar",
-      "header": "My Calendar",
+      "header": "Adem's Calendar",
       "position": "top_left",
       "config": {
         "calendars": [
